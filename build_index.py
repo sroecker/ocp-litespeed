@@ -13,7 +13,8 @@ logging.basicConfig(stream=sys.stdout, level=logging.INFO)
 #logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
 logging.getLogger().addHandler(logging.StreamHandler(stream=sys.stdout))
 
-DATA_DIR = "./lightspeed-rag-content/ocp-product-docs-plaintext/4.16/"
+#DATA_DIR = "./lightspeed-rag-content/ocp-product-docs-plaintext/4.15/"
+DATA_DIR = "./data/"
 
 documents = SimpleDirectoryReader(input_dir=DATA_DIR, recursive=True).load_data()
 print("Document ID:", documents[0].doc_id, "Document Hash:", documents[0].hash)
