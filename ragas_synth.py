@@ -20,7 +20,7 @@ from ragas.testset.evolutions import simple, reasoning, multi_context
 from llama_index.llms.ollama import Ollama
 generator_llm = Ollama(model="llama3", request_timeout=120.0)
 #critic_llm = Ollama(model="llama3", request_timeout=120.0)
-critic_llm = Ollama(model="tensortemplar/prometheus2:7b-fp16", request_timeout=120.0)
+critic_llm = Ollama(model="sroecker/prometheus2", request_timeout=120.0)
 
 # embeddings
 from llama_index.embeddings.ollama import OllamaEmbedding
