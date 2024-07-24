@@ -30,7 +30,7 @@ ollama_embedding = OllamaEmbedding(
 from llama_index.llms.together import TogetherLLM
 llm = TogetherLLM(
     model="mistralai/Mixtral-8x7B-Instruct-v0.1",
-    api_key="b62edcbcd2e8ba84e80ab9261b2778d79faf11c89a0cf2e4c9832be03660e1a9",
+    api_key="XXX",
 )
 """
 
